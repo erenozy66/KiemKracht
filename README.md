@@ -37,45 +37,33 @@ Dit project is een Laravel-applicatie ontwikkeld als onderdeel van een sollicita
 
 ## 🚀 Installatie
 
-1. Clone de repository:
-
 ```bash
     git clone https://github.com/erenozy66/KiemKracht.git
-    cd KiemKracht
-```
-2. Installeer dependencies:
-
-```bash
+    cd KiemKiemKracht
     composer install
-```
-
-3. Maak .env bestand:
-
-```bash
     cp .env.example .env
-```
-
-4. Genereer app key:
-
-```bash
     php artisan key:generate
 ```
+## ⚙️ Database instellen
 
-5. Configureer database in .env
+Pas .env aan:
 
-6. Run migraties + seeder:
+```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=kiemkracht
+    DB_USERNAME=root
+    DB_PASSWORD=
+```
+Maak de database aan in phpMyAdmin: kiemkracht
 
+## 🧱 Database + storage
 ```bash
     php artisan migrate --seed
-```
-
-7. Storage linken:
-
-```bash
     php artisan storage:link
 ```
-
-8. Start server:
+## ▶️ Start applicatie
 
 ```bash
     php artisan serve
