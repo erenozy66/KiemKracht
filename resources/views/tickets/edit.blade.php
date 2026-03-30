@@ -3,7 +3,7 @@
 @section('title', 'Edit Ticket')
 
 @section('content')
-//Bewerkformulier voor tickets
+{{-- Bewerkformulier voor tickets --}}
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card border-0 bg-transparent">
