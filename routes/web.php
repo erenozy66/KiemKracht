@@ -1,6 +1,7 @@
 <?php
 //Definieert alle routes
 //Beschermt beheerpagina’s
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\KlantenController;
