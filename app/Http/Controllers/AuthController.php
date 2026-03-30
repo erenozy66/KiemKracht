@@ -1,4 +1,5 @@
 <?php
+//Beheert login/logout met validatie en veilige sessie-afhandeling
 
 namespace App\Http\Controllers;
 

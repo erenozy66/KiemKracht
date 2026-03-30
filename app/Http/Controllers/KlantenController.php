@@ -1,4 +1,5 @@
 <?php
+// Implementeert opslag, update en verwijdering van bestanden en data
 
 namespace App\Http\Controllers;
 
@@ -26,7 +27,7 @@ class KlantenController extends Controller
 
         $file = $request->file('file');
 
-        // Clean name (no spaces/special chars)
+        //Geen speciale characters
         $baseName = Str::slug($validated['full_name'], '_');
 
         $extension = $file->getClientOriginalExtension();
@@ -35,7 +36,7 @@ class KlantenController extends Controller
         $counter = 1;
         $filename = $baseName . '_' . $counter . '.' . $extension;
 
-        // Keep increasing until filename is unique
+        //Unieke bestandsnamen
         while (Storage::disk('public')->exists($folder . '/' . $filename)) {
             $counter++;
             $filename = $baseName . '_' . $counter . '.' . $extension;
@@ -73,7 +74,7 @@ class KlantenController extends Controller
             $query->orderBy('created_at', 'desc');
         }
 
-        $tickets = $query->paginate(10)->withQueryString();
+        $tickets = $query->paginate(10)->withQueryString(); //max aantal tickets op één pagina
         $totalTickets = $tickets->total();
 
         return view('tickets.index', compact('tickets', 'totalTickets'));

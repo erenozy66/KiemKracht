@@ -3,7 +3,9 @@
 @section('title', 'Login')
 
 @section('content')
+
 <div class="row justify-content-center">
+    
     <div class="col-md-5">
         <div class="card border-0 bg-transparent">
             <div class="card-header text-center" style="background-color: #782F40; color: #FFF; font-weight: bold;">

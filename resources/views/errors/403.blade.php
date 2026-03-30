@@ -3,6 +3,8 @@
 @section('title', 'Forbidden')
 
 @section('content')
+//403 pagina die niet-geauthenticeerde gebruikers blokkeert
+
 <div class="d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 70vh;">
 
     <h1 style="font-size: 80px; color: #F1D09F;">403</h1>

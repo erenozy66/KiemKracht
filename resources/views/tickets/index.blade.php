@@ -3,7 +3,7 @@
 @section('title', 'All Tickets')
 
 @section('content')
-
+//Beveiligd overzicht van alle tickets met zoeken, sorteren, paginatie en beheeracties
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h3 class="text-white fw-bold">Overzicht</h3>
 
@@ -168,5 +168,7 @@
    onmouseout="this.style.opacity='0.5'">
     ↑ ↑ ↓ ↓ ← → ← →
 </p>
+//Hint: pijltjestoetsen 
+
 
 @endsection
