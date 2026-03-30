@@ -39,7 +39,7 @@ Dit project is een Laravel-applicatie ontwikkeld als onderdeel van een sollicita
 
 ```bash
     git clone https://github.com/erenozy66/KiemKracht.git
-    cd KiemKiemKracht
+    cd KiemKracht
     composer install
     cp .env.example .env
     php artisan key:generate
