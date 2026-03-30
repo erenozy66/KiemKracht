@@ -3,7 +3,7 @@
 @section('title', 'All Tickets')
 
 @section('content')
-//Beveiligd overzicht van alle tickets met zoeken, sorteren, paginatie en beheeracties
+ {{-- Beveiligd overzicht van alle tickets met zoeken, sorteren, paginatie en beheeracties --}}
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h3 class="text-white fw-bold">Overzicht</h3>
 
@@ -109,7 +109,7 @@
 
         @empty
         <tr>
-            <td colspan="6" class="text-center text-white">
+            <td colspan="6" class="text-center" style="color: #1f1f1f;">
                 Geen tickets gevonden.
             </td>
         </tr>
@@ -118,7 +118,7 @@
 </table>
 
 </div>
-<!-- ✅ END BORDER WRAPPER -->
+
 
 @if($tickets->lastPage() > 0)
     <div class="d-flex flex-column align-items-center mt-4">
@@ -168,7 +168,7 @@
    onmouseout="this.style.opacity='0.5'">
     ↑ ↑ ↓ ↓ ← → ← →
 </p>
-//Hint: pijltjestoetsen 
+ {{-- Hint: pijltjestoetsen --}}
 
 
 @endsection
