@@ -64,9 +64,18 @@ Optie 2 — SQLite
 Pas .env aan:
 
 ```bash
-    DB_CONNECTION=sqlite
+DB_CONNECTION=sqlite
+// DB_HOST=127.0.0.1
+// DB_PORT=3306
+// DB_DATABASE=kiemkracht
+// DB_USERNAME=root
+// DB_PASSWORD=
 ```
-Maak een leeg bestand aan:
+Link de database naar het bestand:
+```bash
+    DB_DATABASE=database/database.sqlite
+```
+Maak een leeg bestand aan op deze locatie:
 ```bash
     database/database.sqlite
 ```
