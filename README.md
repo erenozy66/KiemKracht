@@ -45,6 +45,7 @@ Dit project is een Laravel-applicatie ontwikkeld als onderdeel van een sollicita
     php artisan key:generate
 ```
 ## ⚙️ Database instellen
+Optie 1 — MySQL
 
 Pas .env aan:
 
@@ -57,6 +58,18 @@ Pas .env aan:
     DB_PASSWORD=
 ```
 Maak de database aan in phpMyAdmin: kiemkracht
+
+Optie 2 — SQLite
+
+Pas .env aan:
+
+```bash
+    DB_CONNECTION=sqlite
+```
+Maak een leeg bestand aan:
+```bash
+    database/database.sqlite
+```
 
 ## 🧱 Database + storage
 ```bash
